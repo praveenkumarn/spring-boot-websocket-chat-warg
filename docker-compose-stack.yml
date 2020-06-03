@@ -7,7 +7,7 @@ services:
     networks:
       - overlay
     environment:
-      - SPRING_PROFILE=QA 
+      - SPRING_PROFILE:STG 
     deploy:
       replicas: 2
 
