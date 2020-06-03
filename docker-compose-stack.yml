@@ -6,6 +6,8 @@ services:
       - "8040:8080"
     networks:
       - overlay
+    environment:
+      - SPRING_PROFILE=QA 
     deploy:
       replicas: 2
 
