@@ -5,7 +5,9 @@ FROM openjdk:8-jdk-alpine
 MAINTAINER Praveen Kumar N<praveenkumar.nagarajan@gmail.com>
 
 # environment variable with default value
-ENV SPRING_PROFILE=DEV
+ENV DB_DATABASE=${DATABASE}
+ENV DB_USER=${USERNAME}
+ENV DB_PASS=${PASS}
 
 # Add a volume pointing to /tmp
 VOLUME /tmp
