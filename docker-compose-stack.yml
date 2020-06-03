@@ -1,15 +1,15 @@
 version: '3'
 services:
   web:
-    image: 172.31.44.24:8083/spring-boot-websocket-chat-demo:latest-v1
+    image: 172.31.44.24:8083/spring-boot-websocket-chat-demo:latest_${JOBNAME}-${BUILDNUM}
     ports:
       - "8040:8080"
     networks:
       - overlay
     environment:
-      - SPRING_PROFILE:STG 
+      - SPRING_PROFILE=STG 
     deploy:
-      replicas: 4
+      replicas: 2
 
 networks:
   overlay:
