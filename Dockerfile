@@ -5,7 +5,7 @@ FROM openjdk:8-jdk-alpine
 MAINTAINER Praveen Kumar N<praveenkumar.nagarajan@gmail.com>
 
 # environment variable with default value
-ENV SPRING_PROFILE=dev
+ENV SPRING_PROFILE=DEV
 
 # Add a volume pointing to /tmp
 VOLUME /tmp
