@@ -6,8 +6,8 @@ services:
       - "8040:8080"
     networks:
       - overlay
-    environment:
-      - SPRING_PROFILE=STG 
+    env_file:
+      - ./secret-stuff.env
     deploy:
       replicas: 2
 
