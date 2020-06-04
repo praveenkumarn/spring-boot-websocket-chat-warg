@@ -7,9 +7,9 @@ services:
     networks:
       - overlay
     environment:
-      - DB_DATABASE=${DB_DATABASE}
-      - DB_USER=${DB_USER}
-      - DB_PASS=${DB_PASS}
+      - DB_DATABASE: "${DB_DATABASE}"
+      - DB_USER: "${DB_USER}"
+      - DB_PASS: "${DB_PASS}"
     deploy:
       replicas: 2
 
