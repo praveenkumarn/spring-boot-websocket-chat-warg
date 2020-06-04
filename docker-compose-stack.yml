@@ -9,7 +9,7 @@ services:
     env_file:
       - ./environment
     deploy:
-      replicas: 2
+      replicas: 4
 
 networks:
   overlay:
